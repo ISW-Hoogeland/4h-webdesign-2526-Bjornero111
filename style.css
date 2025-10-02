@@ -35,3 +35,75 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+
+body {
+  display:grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 120px 1fr 60px;
+    color: var(--text-dark);
+    background: var(--bg-light);
+    min-height: 100svh;
+    font-family: var(--font-main);
+  }
+  
+  header {grid-area: header;
+ background-color: #254d32;
+ padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 2.2rem;
+  }
+  
+  nav{
+    grid-area:nav;
+    color: #254d32;
+    background-color: #3a7d44;
+    grid-area: var(--nav-bg);
+    border-radius: 20px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  main{grid-area:main;
+  
+  }
+  
+  footer{grid-area:footer;
+  
+  }
+  :root {
+      --bg-light: #69b578;
+      --text-dark: #ffffff;
+      --font-main: 'Segoe UI', sans-serif;
+  
+      --h1-bg: #C1ECAF;
+      --h1-text: #1e2d2b;
+      --h2-text: #74A9CB;
+      --h2-border: var(--h1-bg);
+      --h3-text: #D67160;
+  
+      --list-bg: #e8f8f0;
+      --list-border: #A1D69A;
+      --strong-text: var(--h3-text);
+      --code-bg: #f0f0f0;
+  
+      --def-bg: #f2fef9;
+      --def-border: var(--h1-bg);
+      --def-title: var(--text-dark);
+  
+      --nav-bg: var(--h2-text);
+      --nav-text: var(--code-bg);
+  
+      --footer-bg: var(--h1-bg); 
+      --footer-text: var(--h1-text);
+  }
