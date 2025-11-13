@@ -40,10 +40,10 @@ body {
   display:grid;
     grid-template-areas: 
     "header header"
-    "nav nav"
-    "main main"
+    "nav main"
+    
     "footer footer";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 120px 1fr 60px;
     color: var(--text-dark);
     background: var(--bg-light);
@@ -96,7 +96,7 @@ body {
       --list-bg: #e8f8f0;
       --list-border: #A1D69A;
       --strong-text: var(--h3-text);
-      --code-bg: #f0f0f0;
+      --code-bg: #d0db97;
   
       --def-bg: #f2fef9;
       --def-border: var(--h1-bg);
